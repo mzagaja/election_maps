@@ -1,0 +1,2725 @@
+var statejson =
+{
+    "state": "US",
+    "total": 127220067,
+    "candidates": {
+        "59722": "Lib|Phillies|George Phillies",
+        "56224": "Ind|Duncan|Richard Duncan",
+        "3635": "AIP|Keyes|Alan Keyes",
+        "11527": "Lib|Barr|Bob Barr",
+        "12619": "Grn|McKinney|Cynthia McKinney",
+        "59661": "PCF|Lyttle|Bradford Lyttle",
+        "59660": "Obj|Stevens|Thomas Stevens",
+        "59207": "New|Polachek|John Joseph Polachek",
+        "59208": "AKI|Baldwin|Chuck Baldwin",
+        "100013": "NPD|None of these candidates| None of these candidates",
+        "3850": "Ind|Nader|Ralph Nader",
+        "28726": "RP|Weill|Ted Weill",
+        "59886": "Ind|Wamboldt|Jeffrey Wamboldt",
+        "302": "GOP|Paul|Ron Paul",
+        "3486": "SWP|Harris|James Harris",
+        "1918": "Dem|Obama|Barack Obama",
+        "7623": "PSL|La Riva|Gloria La Riva",
+        "59659": "HQ8|Allen|Jonathan Allen",
+        "59593": "Ind|Boss|Jeffrey Boss",
+        "1701": "GOP|McCain|John McCain",
+        "57761": "Una|McEnulty|Frank McEnulty",
+        "51183": "SWP|Calero|Roger Calero",
+        "1243": "SPU|Moore|Brian Moore",
+        "51335": "BoT|Jay|Charles Jay",
+        "51331": "Pro|Amondson|Gene Amondson"
+    },
+    "locals": {
+        "Mississippi": {
+            "name": "Mississippi",
+            "electoral": 6,
+            "fix": {
+                "Jeff Davis": "Jefferson Davis"
+            },
+            "precincts": {
+                "total": 1887,
+                "reporting": 1887
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 687266,
+                                "electoral": 6,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 520864,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 3727,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2447,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2425,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1087,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 470,
+                                "electoral": 0,
+                                "id": "28726"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "MS"
+        },
+        "Oklahoma": {
+            "name": "Oklahoma",
+            "electoral": 7,
+            "fix": {
+                "LeFlore": "Le Flore"
+            },
+            "precincts": {
+                "total": 2231,
+                "reporting": 2231
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 959745,
+                                "electoral": 7,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 502294,
+                                "electoral": 0,
+                                "id": "1918"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "OK"
+        },
+        "Delaware": {
+            "name": "Delaware",
+            "precincts": {
+                "total": 339,
+                "reporting": 339
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 255394,
+                                "electoral": 3,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 152356,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 2401,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1108,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 626,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 385,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 58,
+                                "electoral": 0,
+                                "id": "51183"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "DE"
+        },
+        "Minnesota": {
+            "name": "Minnesota",
+            "electoral": 10,
+            "fix": {
+                "Lac Qui Parle": "Lac qui Parle"
+            },
+            "precincts": {
+                "total": 4130,
+                "reporting": 4130
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1573354,
+                                "electoral": 10,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1275409,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 30152,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 9174,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 6787,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 5174,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 790,
+                                "electoral": 0,
+                                "id": "51183"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "MN"
+        },
+        "Illinois": {
+            "name": "Illinois",
+            "electoral": 21,
+            "fix": {
+                "JoDaviess": "Jo Daviess",
+                "DeWitt": "De Witt",
+                "LaSalle": "La Salle"
+            },
+            "precincts": {
+                "total": 11585,
+                "reporting": 11585
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 3319237,
+                                "electoral": 21,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1981158,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 30517,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 19122,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 11690,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 8135,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1236,
+                                "electoral": 0,
+                                "id": "59207"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "IL"
+        },
+        "Arkansas": {
+            "name": "Arkansas",
+            "electoral": 6,
+            "fix": {
+                "Saint Francis": "St. Francis"
+            },
+            "precincts": {
+                "total": 2588,
+                "reporting": 2588
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 632672,
+                                "electoral": 6,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 418049,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 12808,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4707,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4000,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 3433,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 1089,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "AR"
+        },
+        "New Mexico": {
+            "name": "New Mexico",
+            "electoral": 5,
+            "fix": {
+                "DeBaca": "De Baca"
+            },
+            "precincts": {
+                "total": 1498,
+                "reporting": 1498
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 464458,
+                                "electoral": 5,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 343820,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 5243,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2405,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1578,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1526,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NM"
+        },
+        "Indiana": {
+            "name": "Indiana",
+            "precincts": {
+                "total": 5230,
+                "reporting": 5230
+            },
+            "electoral": 11,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1367503,
+                                "electoral": 11,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1341667,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 29189,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "IN"
+        },
+        "Maryland": {
+            "name": "Maryland",
+            "precincts": {
+                "total": 1829,
+                "reporting": 1829
+            },
+            "electoral": 10,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1612692,
+                                "electoral": 10,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 956663,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 14637,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 9799,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4710,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 3738,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "MD"
+        },
+        "Louisiana": {
+            "name": "Louisiana",
+            "electoral": 9,
+            "fix": {
+                "DeSoto": "De Soto",
+                "Jeff Davis": "Jefferson Davis",
+                "LaSalle": "La Salle"
+            },
+            "precincts": {
+                "total": 3956,
+                "reporting": 3956
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1147603,
+                                "electoral": 9,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 780981,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 9353,
+                                "electoral": 0,
+                                "id": "302"
+                            },
+                            {
+                                "votes": 9184,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 6991,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2579,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 739,
+                                "electoral": 0,
+                                "id": "3486"
+                            },
+                            {
+                                "votes": 354,
+                                "electoral": 0,
+                                "id": "7623"
+                            },
+                            {
+                                "votes": 275,
+                                "electoral": 0,
+                                "id": "51331"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "LA"
+        },
+        "Idaho": {
+            "name": "Idaho",
+            "precincts": {
+                "total": 954,
+                "reporting": 954
+            },
+            "electoral": 4,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 400989,
+                                "electoral": 4,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 235219,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 7096,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4725,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 3649,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "ID"
+        },
+        "Wyoming": {
+            "name": "Wyoming",
+            "precincts": {
+                "total": 490,
+                "reporting": 490
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 160639,
+                                "electoral": 3,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 80496,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2465,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1557,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1172,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "WY"
+        },
+        "Tennessee": {
+            "name": "Tennessee",
+            "precincts": {
+                "total": 2258,
+                "reporting": 2258
+            },
+            "electoral": 11,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1487564,
+                                "electoral": 11,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 1093213,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 11656,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 8559,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 8185,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2490,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 1327,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 1011,
+                                "electoral": 0,
+                                "id": "51335"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "TN"
+        },
+        "Arizona": {
+            "name": "Arizona",
+            "precincts": {
+                "total": 2239,
+                "reporting": 2239
+            },
+            "electoral": 10,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1132560,
+                                "electoral": 10,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 948648,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 11506,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 10365,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 3107,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "AZ"
+        },
+        "Iowa": {
+            "name": "Iowa",
+            "precincts": {
+                "total": 1873,
+                "reporting": 1873
+            },
+            "electoral": 7,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 818240,
+                                "electoral": 7,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 677508,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 8115,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4675,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4470,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1530,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 664,
+                                "electoral": 0,
+                                "id": "3486"
+                            },
+                            {
+                                "votes": 506,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 364,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "IA"
+        },
+        "Michigan": {
+            "name": "Michigan",
+            "precincts": {
+                "total": 5763,
+                "reporting": 5763
+            },
+            "electoral": 17,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 2867680,
+                                "electoral": 17,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2044405,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 33356,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 23962,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 14973,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 9123,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "MI"
+        },
+        "Kansas": {
+            "name": "Kansas",
+            "electoral": 6,
+            "precincts": {
+                "total": 3298,
+                "reporting": 3298
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 685541,
+                                "electoral": 6,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 499979,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 10242,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 6564,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4051,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "KS",
+            "votesby": "district"
+        },
+        "Utah": {
+            "name": "Utah",
+            "precincts": {
+                "total": 2245,
+                "reporting": 2245
+            },
+            "electoral": 5,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 568610,
+                                "electoral": 5,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 317063,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 11421,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 8050,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 6670,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 951,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 254,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "UT"
+        },
+        "Virginia": {
+            "name": "Virginia",
+            "electoral": 13,
+            "fix": {},
+            "precincts": {
+                "total": 2487,
+                "reporting": 2487
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1958370,
+                                "electoral": 13,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1726053,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 11467,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 11055,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 7466,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2352,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "VA"
+        },
+        "Oregon": {
+            "name": "Oregon",
+            "precincts": {
+                "total": 1000,
+                "reporting": 966
+            },
+            "electoral": 7,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 978605,
+                                "electoral": 7,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 699673,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 17454,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 7243,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 7180,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4231,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "OR"
+        },
+        "Connecticut": {
+            "name": "Connecticut",
+            "electoral": 7,
+            "precincts": {
+                "total": 759,
+                "reporting": 759
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 994320,
+                                "electoral": 7,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 627688,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 18709,
+                                "electoral": 0,
+                                "id": "3850"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "CT",
+            "votesby": "town"
+        },
+        "Montana": {
+            "name": "Montana",
+            "electoral": 3,
+            "fix": {
+                "Lewis & Clark": "Lewis and Clark"
+            },
+            "precincts": {
+                "total": 863,
+                "reporting": 863
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 241816,
+                                "electoral": 3,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 229725,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 10499,
+                                "electoral": 0,
+                                "id": "302"
+                            },
+                            {
+                                "votes": 3649,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1341,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "MT"
+        },
+        "California": {
+            "name": "California",
+            "precincts": {
+                "total": 25429,
+                "reporting": 25429
+            },
+            "electoral": 55,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 7643843,
+                                "electoral": 55,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 4634977,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 99368,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 62268,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 37248,
+                                "electoral": 0,
+                                "id": "3635"
+                            },
+                            {
+                                "votes": 35191,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "CA"
+        },
+        "Massachusetts": {
+            "name": "Massachusetts",
+            "electoral": 12,
+            "fix": {
+                "Barnstable": "Barnstable Town",
+                "Manchester": "Manchester-by-the-Sea"
+            },
+            "precincts": {
+                "total": 2168,
+                "reporting": 2168
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1894067,
+                                "electoral": 12,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1105908,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 28570,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 13017,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 6538,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 5035,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "MA",
+            "votesby": "town"
+        },
+        "West Virginia": {
+            "name": "West Virginia",
+            "precincts": {
+                "total": 1887,
+                "reporting": 1887
+            },
+            "electoral": 5,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 394278,
+                                "electoral": 5,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 301438,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 7173,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2458,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2355,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "WV"
+        },
+        "South Carolina": {
+            "name": "South Carolina",
+            "precincts": {
+                "total": 2291,
+                "reporting": 2291
+            },
+            "electoral": 8,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1034500,
+                                "electoral": 8,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 862042,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 7279,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 6827,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 5049,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4461,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "SC"
+        },
+        "New Hampshire": {
+            "name": "New Hampshire",
+            "electoral": 4,
+            "fix": {
+                "": "Atkinson and Gilmanton Academy"
+            },
+            "precincts": {
+                "total": 301,
+                "reporting": 301
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 384591,
+                                "electoral": 4,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 316937,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 3429,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2173,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 518,
+                                "electoral": 0,
+                                "id": "59722"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NH",
+            "votesby": "town"
+        },
+        "Wisconsin": {
+            "name": "Wisconsin",
+            "precincts": {
+                "total": 3621,
+                "reporting": 3621
+            },
+            "electoral": 10,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1670474,
+                                "electoral": 10,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1258181,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 17402,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 8795,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 5022,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 4234,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 770,
+                                "electoral": 0,
+                                "id": "59886"
+                            },
+                            {
+                                "votes": 539,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 236,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "WI"
+        },
+        "Vermont": {
+            "name": "Vermont",
+            "electoral": 3,
+            "precincts": {
+                "total": 260,
+                "reporting": 260
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 219105,
+                                "electoral": 3,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 98791,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 3318,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1060,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 530,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 201,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 157,
+                                "electoral": 0,
+                                "id": "51183"
+                            },
+                            {
+                                "votes": 147,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "VT",
+            "votesby": "town"
+        },
+        "Georgia": {
+            "name": "Georgia",
+            "precincts": {
+                "total": 3303,
+                "reporting": 3299
+            },
+            "electoral": 15,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 2048244,
+                                "electoral": 15,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 1843452,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 28805,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "GA"
+        },
+        "North Dakota": {
+            "name": "North Dakota",
+            "precincts": {
+                "total": 528,
+                "reporting": 528
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 168523,
+                                "electoral": 3,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 141113,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 4234,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1064,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1053,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "ND"
+        },
+        "Pennsylvania": {
+            "name": "Pennsylvania",
+            "precincts": {
+                "total": 9284,
+                "reporting": 9284
+            },
+            "electoral": 21,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 3192316,
+                                "electoral": 21,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2586496,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 41520,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 19926,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "PA"
+        },
+        "Florida": {
+            "name": "Florida",
+            "precincts": {
+                "total": 7005,
+                "reporting": 7005
+            },
+            "electoral": 27,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 4143957,
+                                "electoral": 27,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 3939380,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 27365,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 16733,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 7692,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2791,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 2458,
+                                "electoral": 0,
+                                "id": "3635"
+                            },
+                            {
+                                "votes": 1474,
+                                "electoral": 0,
+                                "id": "7623"
+                            },
+                            {
+                                "votes": 774,
+                                "electoral": 0,
+                                "id": "51335"
+                            },
+                            {
+                                "votes": 523,
+                                "electoral": 0,
+                                "id": "3486"
+                            },
+                            {
+                                "votes": 408,
+                                "electoral": 0,
+                                "id": "59660"
+                            },
+                            {
+                                "votes": 388,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 282,
+                                "electoral": 0,
+                                "id": "51331"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "FL"
+        },
+        "Alaska": {
+            "name": "Alaska",
+            "precincts": {
+                "total": 438,
+                "reporting": 438
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 192631,
+                                "electoral": 3,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 122485,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 3757,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1652,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1575,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "AK"
+        },
+        "Kentucky": {
+            "name": "Kentucky",
+            "electoral": 8,
+            "fix": {
+                "LaRue": "Larue"
+            },
+            "precincts": {
+                "total": 3541,
+                "reporting": 3541
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1050599,
+                                "electoral": 8,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 751515,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 15402,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 5960,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4621,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "KY"
+        },
+        "Hawaii": {
+            "name": "Hawaii",
+            "precincts": {
+                "total": 338,
+                "reporting": 338
+            },
+            "electoral": 4,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 324918,
+                                "electoral": 4,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 120309,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 3814,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1311,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1012,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 968,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "HI"
+        },
+        "Nebraska": {
+            "name": "Nebraska",
+            "precincts": {
+                "total": 1708,
+                "reporting": 1708
+            },
+            "electoral": 5,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 448801,
+                                "electoral": 4,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 329132,
+                                "electoral": 1,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 5306,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2927,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2684,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 1002,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "NE"
+        },
+        "Missouri": {
+            "name": "Missouri",
+            "electoral": 11,
+            "fix": {
+                "LaClede": "Laclede"
+            },
+            "precincts": {
+                "total": 3533,
+                "reporting": 3533
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1445812,
+                                "electoral": 11,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 1441910,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 17813,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 11386,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 8201,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "MO"
+        },
+        "Ohio": {
+            "name": "Ohio",
+            "precincts": {
+                "total": 11156,
+                "reporting": 11156
+            },
+            "electoral": 20,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 2708685,
+                                "electoral": 20,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2501855,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 39441,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 18526,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 12781,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 7892,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 3703,
+                                "electoral": 0,
+                                "id": "56224"
+                            },
+                            {
+                                "votes": 2603,
+                                "electoral": 0,
+                                "id": "1243"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "OH"
+        },
+        "Alabama": {
+            "name": "Alabama",
+            "precincts": {
+                "total": 2843,
+                "reporting": 2840
+            },
+            "electoral": 9,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1264879,
+                                "electoral": 9,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 811764,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 6616,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4984,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4303,
+                                "electoral": 0,
+                                "id": "59208"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "AL"
+        },
+        "New York": {
+            "name": "New York",
+            "electoral": 31,
+            "fix": {
+                "Brooklyn": "Kings",
+                "Staten Island": "Richmond",
+                "Saint Lawrence": "St. Lawrence",
+                "Manhattan": "New York"
+            },
+            "precincts": {
+                "total": 16300,
+                "reporting": 16218
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 4363386,
+                                "electoral": 31,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2576360,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 38048,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 22292,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 12031,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 5703,
+                                "electoral": 0,
+                                "id": "51183"
+                            },
+                            {
+                                "votes": 2298,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NY"
+        },
+        "South Dakota": {
+            "name": "South Dakota",
+            "precincts": {
+                "total": 799,
+                "reporting": 799
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 203019,
+                                "electoral": 3,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 170886,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 4267,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1895,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1835,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "SD"
+        },
+        "Colorado": {
+            "name": "Colorado",
+            "precincts": {
+                "total": 3215,
+                "reporting": 3215
+            },
+            "electoral": 9,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1216793,
+                                "electoral": 9,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1020135,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 12542,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 10264,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 5872,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 2886,
+                                "electoral": 0,
+                                "id": "3635"
+                            },
+                            {
+                                "votes": 2644,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 781,
+                                "electoral": 0,
+                                "id": "57761"
+                            },
+                            {
+                                "votes": 561,
+                                "electoral": 0,
+                                "id": "51335"
+                            },
+                            {
+                                "votes": 312,
+                                "electoral": 0,
+                                "id": "59660"
+                            },
+                            {
+                                "votes": 310,
+                                "electoral": 0,
+                                "id": "59659"
+                            },
+                            {
+                                "votes": 215,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 146,
+                                "electoral": 0,
+                                "id": "3486"
+                            },
+                            {
+                                "votes": 146,
+                                "electoral": 0,
+                                "id": "7623"
+                            },
+                            {
+                                "votes": 106,
+                                "electoral": 0,
+                                "id": "59661"
+                            },
+                            {
+                                "votes": 82,
+                                "electoral": 0,
+                                "id": "51331"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "CO"
+        },
+        "New Jersey": {
+            "name": "New Jersey",
+            "precincts": {
+                "total": 6296,
+                "reporting": 6290
+            },
+            "electoral": 15,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 2085051,
+                                "electoral": 15,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1545495,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 20336,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 8044,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 4732,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 3941,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 787,
+                                "electoral": 0,
+                                "id": "1243"
+                            },
+                            {
+                                "votes": 604,
+                                "electoral": 0,
+                                "id": "59593"
+                            },
+                            {
+                                "votes": 501,
+                                "electoral": 0,
+                                "id": "51183"
+                            },
+                            {
+                                "votes": 407,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NJ"
+        },
+        "Washington": {
+            "name": "Washington",
+            "precincts": {
+                "total": 6719,
+                "reporting": 6277
+            },
+            "electoral": 11,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 1548654,
+                                "electoral": 11,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 1098072,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 25476,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 10958,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 8144,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 3237,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 595,
+                                "electoral": 0,
+                                "id": "7623"
+                            },
+                            {
+                                "votes": 546,
+                                "electoral": 0,
+                                "id": "3486"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "WA"
+        },
+        "North Carolina": {
+            "name": "North Carolina",
+            "precincts": {
+                "total": 2962,
+                "reporting": 2962
+            },
+            "electoral": 15,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 2123390,
+                                "electoral": 15,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 2109698,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 25419,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NC"
+        },
+        "District of Columbia": {
+            "name": "District of Columbia",
+            "precincts": {
+                "total": 143,
+                "reporting": 143
+            },
+            "electoral": 3,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 210403,
+                                "electoral": 3,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 14821,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 851,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 498,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "DC"
+        },
+        "Texas": {
+            "name": "Texas",
+            "electoral": 34,
+            "fix": {
+                "De Witt": "DeWitt",
+                "La Vaca": "Lavaca"
+            },
+            "precincts": {
+                "total": 8466,
+                "reporting": 8466
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 4467748,
+                                "electoral": 34,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 3521164,
+                                "electoral": 0,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 56398,
+                                "electoral": 0,
+                                "id": "11527"
+                            }
+                        ],
+                        "final": "1701"
+                    }
+                }
+            },
+            "abbr": "TX"
+        },
+        "Nevada": {
+            "name": "Nevada",
+            "precincts": {
+                "total": 2015,
+                "reporting": 2015
+            },
+            "electoral": 5,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 531884,
+                                "electoral": 5,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 411988,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 6251,
+                                "electoral": 0,
+                                "id": "100013"
+                            },
+                            {
+                                "votes": 6140,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 4258,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 3197,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 1408,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "NV"
+        },
+        "Maine": {
+            "name": "Maine",
+            "electoral": 4,
+            "fix": {},
+            "precincts": {
+                "total": 613,
+                "reporting": 613
+            },
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 421484,
+                                "electoral": 4,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 296195,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 10763,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 2874,
+                                "electoral": 0,
+                                "id": "12619"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "ME"
+        },
+        "Rhode Island": {
+            "name": "Rhode Island",
+            "precincts": {
+                "total": 541,
+                "reporting": 541
+            },
+            "electoral": 4,
+            "races": {
+                "President": {
+                    "": {
+                        "votes": [
+                            {
+                                "votes": 296547,
+                                "electoral": 4,
+                                "id": "1918"
+                            },
+                            {
+                                "votes": 165389,
+                                "electoral": 0,
+                                "id": "1701"
+                            },
+                            {
+                                "votes": 4829,
+                                "electoral": 0,
+                                "id": "3850"
+                            },
+                            {
+                                "votes": 1382,
+                                "electoral": 0,
+                                "id": "11527"
+                            },
+                            {
+                                "votes": 796,
+                                "electoral": 0,
+                                "id": "12619"
+                            },
+                            {
+                                "votes": 675,
+                                "electoral": 0,
+                                "id": "59208"
+                            },
+                            {
+                                "votes": 122,
+                                "electoral": 0,
+                                "id": "7623"
+                            }
+                        ],
+                        "final": "1918"
+                    }
+                }
+            },
+            "abbr": "RI"
+        }
+    },
+    "totals": {
+        "races": {
+            "President": {
+                "": {
+                    "votes": [
+                        {
+                            "votes": 67112833,
+                            "electoral": 365,
+                            "id": "1918"
+                        },
+                        {
+                            "votes": 58451426,
+                            "electoral": 173,
+                            "id": "1701"
+                        },
+                        {
+                            "votes": 701929,
+                            "electoral": 0,
+                            "id": "3850"
+                        },
+                        {
+                            "votes": 513043,
+                            "electoral": 0,
+                            "id": "11527"
+                        },
+                        {
+                            "votes": 182225,
+                            "electoral": 0,
+                            "id": "59208"
+                        },
+                        {
+                            "votes": 153834,
+                            "electoral": 0,
+                            "id": "12619"
+                        },
+                        {
+                            "votes": 42592,
+                            "electoral": 0,
+                            "id": "3635"
+                        },
+                        {
+                            "votes": 19852,
+                            "electoral": 0,
+                            "id": "302"
+                        },
+                        {
+                            "votes": 7486,
+                            "electoral": 0,
+                            "id": "7623"
+                        },
+                        {
+                            "votes": 7209,
+                            "electoral": 0,
+                            "id": "51183"
+                        },
+                        {
+                            "votes": 6566,
+                            "electoral": 0,
+                            "id": "1243"
+                        },
+                        {
+                            "votes": 6251,
+                            "electoral": 0,
+                            "id": "100013"
+                        },
+                        {
+                            "votes": 3703,
+                            "electoral": 0,
+                            "id": "56224"
+                        },
+                        {
+                            "votes": 2618,
+                            "electoral": 0,
+                            "id": "3486"
+                        },
+                        {
+                            "votes": 2346,
+                            "electoral": 0,
+                            "id": "51335"
+                        },
+                        {
+                            "votes": 1236,
+                            "electoral": 0,
+                            "id": "59207"
+                        },
+                        {
+                            "votes": 781,
+                            "electoral": 0,
+                            "id": "57761"
+                        },
+                        {
+                            "votes": 770,
+                            "electoral": 0,
+                            "id": "59886"
+                        },
+                        {
+                            "votes": 720,
+                            "electoral": 0,
+                            "id": "59660"
+                        },
+                        {
+                            "votes": 639,
+                            "electoral": 0,
+                            "id": "51331"
+                        },
+                        {
+                            "votes": 604,
+                            "electoral": 0,
+                            "id": "59593"
+                        },
+                        {
+                            "votes": 518,
+                            "electoral": 0,
+                            "id": "59722"
+                        },
+                        {
+                            "votes": 470,
+                            "electoral": 0,
+                            "id": "28726"
+                        },
+                        {
+                            "votes": 310,
+                            "electoral": 0,
+                            "id": "59659"
+                        },
+                        {
+                            "votes": 106,
+                            "electoral": 0,
+                            "id": "59661"
+                        }
+                    ],
+                    "precincts": {
+                        "total": 0,
+                        "reporting": 0
+                    }
+                }
+            }
+        },
+        "electoral": 538
+    }
+}
