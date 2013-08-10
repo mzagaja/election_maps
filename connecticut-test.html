@@ -29,8 +29,6 @@
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="ct-all.json" type="text/javascript" charset="utf-8"></script>
 <script>
 var width = 960,
     height = 800;
@@ -70,48 +68,33 @@ var svg = d3.select("body").append("svg")
                   .attr("dy", ".35em")
                   .text(function(d) { return d.id; });
 });
-$( function() {
 
-});
-   function candidate_id_decoder(president) {
-      // Decode president name based on codes
-      if(president == '1701') {
-          return 'McCain';
-      }
-      else if (president == '1918') {
-          return 'Obama';
-      }
-      else {
-        return false;
-      }
-    }
+d3.json("ct-all.json", function(error, results) {
+  var ctjson = results;
+  var state_data = [];
 
-var state_data = [];
-$.each(ctjson.locals, function(key, data) {
-
-  // Grab the ID of the candidate elected president in that state
-  var president = data.races.President[''].votes[0].id;
-
-  //Grab the town of that winner
-  var town = data.name;
-
-  var datarow = {"name": town,
-                         "president": candidate_id_decoder(president)};
+  function newArrayAdd(entry) {
+    var president = entry.races.President[''].votes[0].id;
+    var town = entry.name;
+    var datarow = {"name": town,
+                         "president": president};
   state_data.push(datarow);
-});
+  }
 
-function colorTown( town ) {
+  function colorTown(town) {
   var selector = '.subunit.' + town.name.split(' ').join('.');
-  if(town.president == "Obama") {
-    $( selector ).css( "fill", "blue");
+  if(town.president == 1918) {
+    d3.selectAll(selector).style("fill", "blue");
   }
   else {
-    $( selector ).css("fill","red");
+    d3.selectAll(selector).style("fill", "red");
   }
 }
-$(window).load(function() {
-    state_data.forEach( colorTown );
-  });
+
+  ctjson.forEach(newArrayAdd);
+  state_data.forEach(colorTown);
+
+});
 
 </script>
 Some text!
