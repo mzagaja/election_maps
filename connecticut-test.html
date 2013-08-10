@@ -25,16 +25,19 @@
 }
 
 </style>
+<!--http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/-->
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="ct-all.json" type="text/javascript" charset="utf-8"></script>
 <script>
 var width = 960,
     height = 800;
 
 var projection = d3.geo.albers()
     .rotate([75, 0])
-    .center([2.3, 41.5])
+    .center([2.2, 41.5])
     .scale(37000)
     .translate([width / 2, height / 2])
     .precision(.1);
@@ -46,6 +49,33 @@ var path = d3.geo.path()
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
+
+    function candidate_id_decoder(president) {
+      // Decode president name based on codes
+      if(president == '1701') {
+          return 'McCain';
+      }
+      else if (president == '1918') {
+          return 'Obama';
+      }
+      else {
+        return false;
+      }
+    }
+
+var state_data = [];
+$.each(ctjson.locals, function(key, data) {
+
+  // Grab the ID of the candidate elected president in that state
+  var president = data.races.President[''].votes[0].id;
+
+  //Grab the town of that winner
+  var town = data.name;
+
+  var datarow = {"name": town,
+                         "president": candidate_id_decoder(president)};
+  state_data.push(datarow);
+});
 
     d3.json("connecticut.json", function(error, connecticut) {
         svg.selectAll(".subunit")
@@ -68,6 +98,15 @@ var svg = d3.select("body").append("svg")
                   .text(function(d) { return d.id; });
 });
 
+function colorTown( town ) {
+  var selector = '.subunit.' + town.name.split(' ').join('.');
+  if(town.president == "Obama") {
+    $( selector ).css( "fill", "blue");
+  }
+  else {
+    $( selector ).css("fill","red");
+  }
+}
 </script>
 Some text!
 </body>
