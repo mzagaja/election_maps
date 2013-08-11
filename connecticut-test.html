@@ -26,6 +26,7 @@
 
 </style>
 <!--http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/-->
+<!--http://www.schneidy.com/Tutorials/MapsTutorial.html-->
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -75,15 +76,11 @@ var svg = d3.select("body").append("svg")
   d3.json("ct-all.json", function(error, results) {
   var ctjson = results;
   var state_data = [];
+  var color = d3.scale.linear().domain([0,1]).range(['red', 'blue'])
 
   function colorTown(town) {
   var selector = '.subunit.' + town.name.split(' ').join('.');
-  if(town.president == 1918) {
-    d3.selectAll(selector).style("fill", "blue");
-  }
-  else {
-    d3.selectAll(selector).style("fill", "red");
-  }
+    d3.selectAll(selector).style("fill", color(town.obamapercent));
 }
 
   function printThis(entry, index, array) {
@@ -93,8 +90,17 @@ var svg = d3.select("body").append("svg")
   $.each(ctjson.locals, function(key, data) {
     var president = data.races.President[''].votes[0].id;
     var town = data.name;
+    if(data.races.President[''].votes[0].id == 1918) {
+      var ObamaPercent = (data.races.President[''].votes[0].votes / data.races.President[''].total);
+      console.log(data.name + " " + ObamaPercent);
+    }
+    else {
+      var ObamaPercent = (data.races.President[''].votes[1].votes / data.races.President[''].total);
+      console.log(ObamaPercent + " " + data.name);
+    }
     var datarow = {"name": town,
-                         "president": president};
+                         "president": president,
+                         "obamapercent": ObamaPercent};
   state_data.push(datarow);
   });
 
