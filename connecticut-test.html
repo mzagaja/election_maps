@@ -26,11 +26,13 @@
 
 </style>
 <!--http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/-->
-<body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<body>
+<h1>Connecticut 2008 Presidential Election Result by Town</h1>
 <script>
+$( function() { 
 var width = 960,
     height = 800;
 
@@ -70,7 +72,7 @@ var svg = d3.select("body").append("svg")
                   .text(function(d) { return d.id; });
 });
 
-d3.json("ct-all.json", function(error, results) {
+  d3.json("ct-all.json", function(error, results) {
   var ctjson = results;
   var state_data = [];
 
@@ -98,9 +100,7 @@ d3.json("ct-all.json", function(error, results) {
 
 state_data.forEach(colorTown);
 
-});
-
+});});
 </script>
-<h1>Connecticut Election Results 2008 President</h1>
 </body>
 </html>
