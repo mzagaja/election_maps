@@ -13,7 +13,7 @@
 }
 
 .subunit-label {
-  fill: #777;
+  fill: white;
   fill-opacity: .5;
   font-size: 10px;
   font-weight: 300;
@@ -29,6 +29,7 @@
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script>
 var width = 960,
     height = 800;
@@ -73,14 +74,6 @@ d3.json("ct-all.json", function(error, results) {
   var ctjson = results;
   var state_data = [];
 
-  function newArrayAdd(entry) {
-    var president = entry.races.President[''].votes[0].id;
-    var town = entry.name;
-    var datarow = {"name": town,
-                         "president": president};
-  state_data.push(datarow);
-  }
-
   function colorTown(town) {
   var selector = '.subunit.' + town.name.split(' ').join('.');
   if(town.president == 1918) {
@@ -91,12 +84,23 @@ d3.json("ct-all.json", function(error, results) {
   }
 }
 
-  ctjson.forEach(newArrayAdd);
-  state_data.forEach(colorTown);
+  function printThis(entry, index, array) {
+    console.log(entry);
+  }
+
+  $.each(ctjson.locals, function(key, data) {
+    var president = data.races.President[''].votes[0].id;
+    var town = data.name;
+    var datarow = {"name": town,
+                         "president": president};
+  state_data.push(datarow);
+  });
+
+state_data.forEach(colorTown);
 
 });
 
 </script>
-Some text!
+<h1>Connecticut Election Results 2008 President</h1>
 </body>
 </html>
