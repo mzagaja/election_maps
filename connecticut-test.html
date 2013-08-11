@@ -33,7 +33,6 @@
 <body>
 <h1>Connecticut 2008 Presidential Election Result by Town</h1>
 <script>
-$( function() { 
 var width = 960,
     height = 800;
 
@@ -71,42 +70,44 @@ var svg = d3.select("body").append("svg")
                   .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
                   .attr("dy", ".35em")
                   .text(function(d) { return d.id; });
+
+            d3.json("ct-all.json", function(error, results) {
+              var ctjson = results;
+              var state_data = [];
+              var color = d3.scale.linear().domain([0,1]).range(['red', 'blue'])
+
+              function colorTown(town) {
+              var selector = '.subunit.' + town.name.split(' ').join('.');
+                d3.selectAll(selector).style("fill", color(town.obamapercent));
+            }
+
+              function printThis(entry, index, array) {
+                console.log(entry);
+              }
+
+              $.each(ctjson.locals, function(key, data) {
+                var president = data.races.President[''].votes[0].id;
+                var town = data.name;
+                if(data.races.President[''].votes[0].id == 1918) {
+                  var ObamaPercent = (data.races.President[''].votes[0].votes / data.races.President[''].total);
+                  console.log(data.name + " " + ObamaPercent);
+                }
+                else {
+                  var ObamaPercent = (data.races.President[''].votes[1].votes / data.races.President[''].total);
+                  console.log(ObamaPercent + " " + data.name);
+                }
+                var datarow = {"name": town,
+                                     "president": president,
+                                     "obamapercent": ObamaPercent};
+              state_data.push(datarow);
+              });
+
+            state_data.forEach(colorTown);
+
+            });
 });
 
-  d3.json("ct-all.json", function(error, results) {
-  var ctjson = results;
-  var state_data = [];
-  var color = d3.scale.linear().domain([0,1]).range(['red', 'blue'])
 
-  function colorTown(town) {
-  var selector = '.subunit.' + town.name.split(' ').join('.');
-    d3.selectAll(selector).style("fill", color(town.obamapercent));
-}
-
-  function printThis(entry, index, array) {
-    console.log(entry);
-  }
-
-  $.each(ctjson.locals, function(key, data) {
-    var president = data.races.President[''].votes[0].id;
-    var town = data.name;
-    if(data.races.President[''].votes[0].id == 1918) {
-      var ObamaPercent = (data.races.President[''].votes[0].votes / data.races.President[''].total);
-      console.log(data.name + " " + ObamaPercent);
-    }
-    else {
-      var ObamaPercent = (data.races.President[''].votes[1].votes / data.races.President[''].total);
-      console.log(ObamaPercent + " " + data.name);
-    }
-    var datarow = {"name": town,
-                         "president": president,
-                         "obamapercent": ObamaPercent};
-  state_data.push(datarow);
-  });
-
-state_data.forEach(colorTown);
-
-});});
 </script>
 </body>
 </html>
