@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.subunit {
+  fill: #ddc;
+}
+
+.subunit-boundary {
+  fill: none;
+  stroke: #777;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+.subunit-label {
+  fill: white;
+  fill-opacity: .5;
+  font-size: 10px;
+  font-weight: 300;
+  text-anchor: middle;
+}
+
+.subunit.County.subdivisions.not.defined {
+  display: none;
+}
+
+</style>
+<!--http://blog.visual.ly/how-to-make-choropleth-maps-in-d3/-->
+<!--http://www.schneidy.com/Tutorials/MapsTutorial.html-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<body>
+<h1>Connecticut 2008 Presidential Election Result by Town</h1>
+<script>
+var width = 630,
+    height = 500;
+
+var projection = d3.geo.albers()
+    .rotate([75, 0])
+    .center([2.2, 41.5])
+    .scale(25000)
+    .translate([width / 2, height / 2])
+    .precision(.1);
+
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+    d3.json("connecticut.json", function(error, connecticut) {
+        svg.selectAll(".subunit")
+            .data(topojson.feature(connecticut, connecticut.objects.places).features)
+          .enter().append("path")
+            .attr("class", function(d) { return "subunit " + d.id; })
+            .attr("d", path);
+
+          svg.append("path")
+              .datum(topojson.mesh(connecticut, connecticut.objects.places, function(a, b) { return a !== b && a.id !== "County subdivisions not defined"; }))
+              .attr("d", path)
+              .attr("class", "subunit-boundary");
+
+            d3.json("ct-all.json", function(error, results) {
+              var ctjson = results;
+              var state_data = [];
+              var color = d3.scale.linear().domain([0,1]).range(['red', 'blue'])
+
+              function colorTown(town) {
+              var selector = '.subunit.' + town.name.split(' ').join('.');
+                d3.selectAll(selector).style("fill", color(town.obamapercent));
+            }
+
+              function printThis(entry, index, array) {
+                console.log(entry);
+              }
+
+              $.each(ctjson.locals, function(key, data) {
+                var president = data.races.President[''].votes[0].id;
+                var town = data.name;
+                if(data.races.President[''].votes[0].id == 1918) {
+                  var ObamaPercent = (data.races.President[''].votes[0].votes / data.races.President[''].total);
+                  console.log(data.name + " " + ObamaPercent);
+                }
+                else {
+                  var ObamaPercent = (data.races.President[''].votes[1].votes / data.races.President[''].total);
+                  console.log(ObamaPercent + " " + data.name);
+                }
+                var datarow = {"name": town,
+                                     "president": president,
+                                     "obamapercent": ObamaPercent};
+              state_data.push(datarow);
+              });
+
+            state_data.forEach(colorTown);
+
+            });
+});
+</script>
+</body>
+</html>
