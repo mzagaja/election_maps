@@ -1,6 +1,17 @@
 <!DOCTYPE html>
+<head>
 <meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Averia+Libre:300' rel='stylesheet' type='text/css'>
 <style>
+body {
+  background-image: url('background.jpg');
+}
+
+h1 {
+  padding-left: 140px;
+  font-family: 'Averia Libre', cursive;
+}
+
 .subunit {
   fill: #ddc;
 }
@@ -15,13 +26,10 @@
 .subunit-label {
   fill: white;
   fill-opacity: .5;
-  font-size: 10px;
+  font-size: 6.4px;
   font-weight: 300;
+  font-family: 'Averia Libre', cursive;
   text-anchor: middle;
-}
-
-.subunit.County.subdivisions.not.defined {
-  display: none;
 }
 
 </style>
@@ -30,6 +38,7 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
 <body>
 <h1>Connecticut 2008 Presidential Election Result by Town</h1>
 <script>
@@ -39,7 +48,7 @@ var width = 960,
 var projection = d3.geo.albers()
     .rotate([75, 0])
     .center([2.2, 41.5])
-    .scale(37000)
+    .scale(36000)
     .translate([width / 2, height / 2])
     .precision(.1);
 
@@ -53,18 +62,18 @@ var svg = d3.select("body").append("svg")
 
     d3.json("connecticut.json", function(error, connecticut) {
         svg.selectAll(".subunit")
-            .data(topojson.feature(connecticut, connecticut.objects.places).features)
+            .data(topojson.feature(connecticut, connecticut.objects.ct_towns).features)
           .enter().append("path")
             .attr("class", function(d) { return "subunit " + d.id; })
             .attr("d", path);
 
           svg.append("path")
-              .datum(topojson.mesh(connecticut, connecticut.objects.places, function(a, b) { return a !== b && a.id !== "County subdivisions not defined"; }))
+              .datum(topojson.mesh(connecticut, connecticut.objects.ct_towns, function(a, b) { return a !== b && a.id !== "County subdivisions not defined"; }))
               .attr("d", path)
               .attr("class", "subunit-boundary");
 
             svg.selectAll(".subunit-label")
-                  .data(topojson.feature(connecticut, connecticut.objects.places).features)
+                  .data(topojson.feature(connecticut, connecticut.objects.ct_towns).features)
                 .enter().append("text")
                   .attr("class", function(d) { return "subunit-label " + d.id; })
                   .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
