@@ -1,8 +1,6 @@
-election_maps
-=============
+# election_maps
 
-Right now I am working on creating election maps for the state of Connecticut using D3JS. My goal is to learn how to use
-geographic functions in D3JS and also make some useful town by town election maps that can be incorproated into websites.
+I have created some 2008 election maps using D3.js  My goal is to learn how to use geographic functions in D3.js and also make some useful town by town election maps that can be incorproated into websites.
 
 The town by town map was downloaded from http://magic.lib.uconn.edu/connecticut_data.html from the [2010 
 Redistricting Census Data](http://magic.lib.uconn.edu/magic_2/vector/37800/townct_37800_0000_2010_s100_census_1_shp.zip). I then converted it to GeoJSON using ogr2ogr and then topoJSON. 
