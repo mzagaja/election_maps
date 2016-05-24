@@ -13,3 +13,5 @@ http://bl.ocks.org/mbostock/3734308 to more easily position it. The settings in 
 A live copy is available at [http://wnext.net/2008ct/connecticut-test.html](http://wnext.net/2008ct/connecticut-test.html).
 
 The PDF is a copy of the presentation I gave on this map to the [NewHaven.io](http://www.newhaven.io) Civic Hack Night Meetup Group in March.
+
+Testing CLAHub Pull Request
